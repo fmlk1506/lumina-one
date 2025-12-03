@@ -3,14 +3,260 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lumina One</title>
-    <link rel="stylesheet" href="app.css" />
+    <title>Lumina Audio</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Lumina One</h1>
-    <p>Lumina One nem at tage med dig på farten.</p>
+    <!-- Wrapper til hele siden, så den får en max bredde -->
+    <div class="page-wrapper">
+      <!-- Header og navigation -->
+      <header class="site-header">
+        <!-- Den øverste brune topbar med ikoner og tekst-->
+        <div class="topbar">
+          <!-- Venstre side i topbaren - Sociale medier -->
+          <div class="topbar-left">
+            <img src="images/Facebook-logo.png" alt="Facebook logo" />
+            <img src="images/Instagram-logo.png" alt="Instagram logo" />
+            <img src="images/TikTok-logo.png" alt="TikTok logo" />
+          </div>
 
+          <!-- Højre side i topbaren - tekst og ikoner -->
+          <div class="topbar-right">
+            <img src="images/To-personer.png" alt="Personer ikon" />
+            <span>+100.000 Personer bruger Lumina</span>
+            <img src="images/Papkasse.png" alt="Leverings ikon" />
+            <span>Hurtig levering</span>
+          </div>
+        </div>
 
-    <script src="app.js"></script>
+        <!-- Hovednavigation med logo, menupunkter og ikoner -->
+        <div class="main-nav">
+          <!-- Logo -->
+          <img src="images/logo.png" alt="Lumina logo" />
+
+          <!-- navigation links -->
+          <nav>
+            <a href="#">Højtalere</a>
+            <a href="#">Tilbehør</a>
+            <a href="#">Om os</a>
+            <a href="#">Support</a>
+          </nav>
+
+          <!-- Ikoner - søg, favoritter og kurv -->
+          <div class="nav-icons">
+            <img src="images/Søg.png" alt="Søg ikonet" />
+            <img src="images/Hjerte.png" alt="Favorit ikonet" />
+            <img src="images/Kurv.png" alt="Kurv ikonet" />
+          </div>
+        </div>
+      </header>
+
+      <!-- Hero sektion -->
+      <main>
+        <section class="hero">
+          <button class="cta-button">KØB NU!</button>
+        </section>
+
+        <!-- De 3 informations bokse -->
+        <section class="features">
+          <!-- Informations boks 1 -->
+          <article class="feature-card">
+            <img src="images/node.png" alt="Node ikon" />
+            <p>
+              Lumina-højtaleren kan spille op til 100 dB - mere end nok til
+              stranden eller parken, uden at det bliver for meget.
+            </p>
+          </article>
+
+          <!-- Informations boks 2 -->
+          <article class="feature-card">
+            <img src="images/kg.png" alt="Vægt ikon" />
+            <p>
+              Kun 4,5 kg. Nem at tage med og lige til at lægge i din Lumina
+              totebag.
+            </p>
+          </article>
+
+          <!-- Informations boks 3 -->
+          <article class="feature-card">
+            <img src="images/batteri.png" alt="Batteri ikon" />
+            <p>
+              Op til 18 timers batteritid - nem at oplade med det indbyggede
+              USB-kabel.
+            </p>
+          </article>
+        </section>
+
+        <!-- Produkt sektion -->
+        <section class="colors">
+          <h2>Måske du vil foretrække den i en anden farve?</h2>
+
+          <!-- Grid med produktkort -->
+          <div class="product-grid">
+            <!-- Produktkort 1 -->
+            <article class="product-card">
+              <img
+                src="images/Moonlight-white-hoejttaller.png"
+                alt="Moonlight White højttaler"
+              />
+              <h3>Lumina One</h3>
+              <p>1.995,00 kr.</p>
+              <p>Moonlight White</p>
+            </article>
+
+            <!-- Produktkort 2 -->
+            <article class="product-card">
+              <img
+                src="images/Lavender-mist-hoejttaler.png"
+                alt="Lavender mist højttaler"
+              />
+              <h3>Lumina One</h3>
+              <p>1.995,00 kr.</p>
+              <p>Lavender Mist</p>
+            </article>
+
+            <!-- Produktkort 3 -->
+            <article class="product-card">
+              <img
+                src="images/Dusty-rose-hoejttaler.png"
+                alt="Dusty rose højttaler"
+              />
+              <h3>Lumina One</h3>
+              <p>1.995,00 kr.</p>
+              <p>Dusty Rose</p>
+            </article>
+
+            <!-- Produktkort 4 -->
+            <article class="product-card">
+              <img
+                src="images/Sage-green-hoejttaler.png"
+                alt="Sage green højttaler"
+              />
+              <h3>Lumina One</h3>
+              <p>1.995,00 kr.</p>
+              <p>Sage Green</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- Instagram opslag -->
+        <section class="instagram-gallery">
+          <!-- Wrapper der holder alle billederne i en række -->
+          <div class="image-row">
+            <!-- Instagram boks nr 1 -->
+            <div class="insta-box">
+              <img src="images/kathrine.png" alt="Lumina instagram billede 1" />
+              <div class="overlay">
+                <img
+                  src="images/Instagram-logo.png"
+                  class="icon"
+                  alt="Instagram logo"
+                />
+              </div>
+            </div>
+
+            <!-- Instagram boks nr 2 -->
+            <div class="insta-box">
+              <img src="images/kendal.png" alt="Lumina instagram billede 2" />
+              <div class="overlay">
+                <img
+                  src="images/Instagram-logo.png"
+                  class="icon"
+                  alt="Instagram logo"
+                />
+              </div>
+            </div>
+
+            <!-- Instagram boks nr 3 -->
+            <div class="insta-box">
+              <img src="images/babara.png" alt="Lumina instagram billede 3" />
+              <div class="overlay">
+                <img
+                  src="images/Instagram-logo.png"
+                  class="icon"
+                  alt="Instagram logo"
+                />
+              </div>
+            </div>
+
+            <!-- Instagram boks nr 4 -->
+            <div class="insta-box">
+              <img src="images/anna.png" alt="Lumina instagram billede 4" />
+              <div class="overlay">
+                <img
+                  src="images/Instagram-logo.png"
+                  class="icon"
+                  alt="Instagram logo"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Nyhed sektion -->
+        <section class="new-release">
+          <h2>NYHEDER</h2>
+          <p>Tasker og Accessories</p>
+
+          <!-- Grid med to nye produkter -->
+          <div class="product-grid">
+            <!-- Lumina One totebag -->
+            <article class="product-card">
+              <img src="images/Taske.png" alt="Lumina taske" />
+              <h3>Lumina One toteBag</h3>
+              <p>199,00 kr.</p>
+            </article>
+
+            <!-- Lumina One cover -->
+            <article class="product-card">
+              <img src="images/Cover.png" alt="Lumina One cover" />
+              <h3>Lumina One Cover</h3>
+              <p>299,00 kr.</p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <!-- Footer delt op i 4 kolonner -->
+        <div class="footer-columns">
+          <!-- Kolonnne 1: Kontakt -->
+          <div>
+            <h3>Kontakt</h3>
+            <p>luminaaudio.support@gamil.com</p>
+            <p>+45 1234 5678</p>
+          </div>
+
+          <!-- Kolonnne 2: Produkter -->
+          <div>
+            <h3>Produkter</h3>
+            <p>Lumina One</p>
+            <p>Lumina Two</p>
+            <p>Lumina +</p>
+            <p>Lumina One totebag</p>
+            <p>Lumina One cover</p>
+          </div>
+
+          <!-- Kolonnne 3: Information -->
+          <div>
+            <h3>Information</h3>
+            <p>Om os</p>
+            <p>Forhandlere</p>
+            <p>Privatlivspolitik</p>
+            <p>Handelsbetingelser</p>
+            <p>Retur & Reklamation</p>
+          </div>
+
+          <!-- Kolonnne 4: Nyhedsbrev -->
+          <div>
+            <h3>Hold dig opdateret med nyheder og fantastiske tilbud</h3>
+            <input type="email" placeholder="E-mail" />
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

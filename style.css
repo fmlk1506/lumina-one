@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Basis styling for hele siden */
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #ffffff;
+  color: #3b3127;
+}
+
+/* Holder hele hjemmesiden centeret og med maks bredde */
+.page-wrapper {
+  max-width: 1500px; 
+  margin: 0 auto; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; 
+}
+
+/* Giver luft rundt om main delen */
+main {
+  flex: 1;
+  padding: 0 3rem 3rem;
+}
+
+/* Den brune topbar - den øverste del */
+.topbar {
+  background-color: #5b4636;
+  color: white;
+  padding: 6px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Venstre og højre side i topbaren står på linje */
+.topbar-left,
+.topbar-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Ikoner i topbaren */
+.topbar img {
+  height: 18px;
+  margin-right: 12px;
+}
+
+/* Teksten i højre side af topbaren */
+.topbar-right span {
+  margin-right: 20px;
+  font-size: 0.9rem;
+}
+
+/* Navigation / Header - logo, menupunkter og ikoner */
+.site-header {
+  background-color: white;
+  color: #3b3127;
+}
+
+/* Layoutet for navigationen, gør at alt står på linje */
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+}
+
+/* Størrelse på logo i navigationen */
+.main-nav > img {
+  height: 120px;
+}
+
+/* Layoutet for links i navigationen */
+.main-nav nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+.main-nav nav a:hover {
+  text-decoration: underline;
+}
+
+/* Ikoner til højre i navigationen */
+.nav-icons {
+  display: flex;
+  align-items: center;
+}
+.nav-icons img {
+  height: 22px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+/* Hero sektion */
+.hero {
+  margin: 1rem 0;
+  border-radius: 16px;
+  overflow: hidden;
+  background-image: url("images/Hero.png");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+}
+
+/* Call to action knappen */
+.cta-button {
+  position: absolute;
+  left: 3rem;
+  bottom: 3rem;
+  padding: 1rem 2rem;
+  background: white;
+  border: none;
+  border-radius: 999px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Informations bokse under hero billedet */
+.features {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+/* Hver enkelt informations boks */
+.feature-card {
+  background: rgba(183, 183, 183, 0.332);
+  padding: 1.5rem;
+  border-radius: 16px;
+}
+
+/* Produkt sektion */
+.colors {
+  margin-bottom: 5rem;
+}
+
+/* Overskrift til produkt-farver */
+.colors h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Grid med produkter produkterne */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+/* Hvert enkel produktkort */
+.product-card {
+  background: rgba(183, 183, 183, 0.332);
+  border-radius: 16px;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Produktbilleder i kortene */
+.product-card img {
+  max-width: 100%;
+  border-radius: 16px;
+  display: block;
+}
+
+/* Nyheds sektion */
+.new-release {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+/* Billederne i nyhedssektionen er centreret og i 2 kolonner */
+.new-release .product-grid {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 600px;
+  margin: 2rem auto 0;
+}
+
+/* Footer */
+.site-footer {
+  background: rgba(183, 183, 183, 0.332);
+  padding: 2rem 3rem;
+  margin-top: 3rem;
+}
+
+/* Footer opdelt i 4 kolonner */
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+/* Instagram opslagene */
+.instagram-gallery {
+  margin: 3rem 0;
+}
+
+/* Alle billeder i en række */
+.image-row {
+  display: flex;
+  gap: 32px;
+}
+
+/* Billedeboks - med instagrambillederne og overlay */
+.insta-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  flex: 1;
+}
+
+/* Instagram billedet */
+.insta-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: 0.3s ease;
+  border-radius: 15px;
+}
+
+/* Overlayet der kommer frem når når musen hover */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.557);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.3s ease;
+  border-radius: 15px;
+}
+
+/* Instagram-logoet i overlayet */
+.icon {
+  width: 70px;
+  opacity: 0.9;
+}
+
+/* Billedet bliver mørkere når musen hover */
+.insta-box:hover img {
+  filter: brightness(70%);
+}
+
+/* Overlayet bliver synligt når musen hover */
+.insta-box:hover .overlay {
+  opacity: 1;
+}

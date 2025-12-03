@@ -1,4 +1,4 @@
-document.body.innerHTML += "Hello JavaScript!";
+console.log("JavaScript er connected!");
 // alert("Hello Dat.js");
 console.log("Hello Multimedia Designers");
 console.log("Hi Students!");
